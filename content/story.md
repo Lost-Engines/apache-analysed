@@ -81,7 +81,13 @@ Finding the figure took another step. There isn't a separate model file for it. 
 
 <figure><a href="../poses/"><img src="../images/poses.png" width="1200" height="750" alt="The reconstructed nineteen-part MANEDIT figure in a walking pose"></a><figcaption>MANEDIT’s preview figure, recovered from the editor executable. Choose a motion and scrub through it in the browser.</figcaption></figure>
 
-The [animation exhibit](../poses/) plays 104 sequences accepted by that editor. The identical MANEDIT executable also ships with the Hind demo. Elsewhere in Apache’s `3DDATA` directory, a file called `RGB` turns out to be a directory listing of `E:\HIND\3DDATA`, dated February 1996. These are traces of Digital Integration’s shared development work, preserved on the release discs.
+**Hind, Digital Integration’s follow-up helicopter simulator, uses the movements for its infantry.** The demo bundled with Apache contains 79 pose files, all byte-for-byte identical to files in Apache’s collection, along with the same MANEDIT executable. Following Hind’s startup code takes us to a loader which opens 54 of those sequences. Its soldiers use them to walk, run, kneel, fire, die, and climb in and out of the helicopter.
+
+Roberts described the job in an [interview with Planet Black & White](https://web.archive.org/web/20010720140340/http://www.planetblackandwhite.com/features/interviews/scawen.shtml): “I wrote the code for the animated polygon soldiers in the game.” Hind’s [manual](https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2577400/manuals/9489c65a7d0af953bb520cfc57f048726f84a8a7/HINDmanual.pdf?t=1757289970) introduces ground troops as a first for Digital Integration and explains how to deploy and collect them. MANEDIT gave the team a simple figure on which to build those movements.
+
+The files probably reached Apache’s disc when a shared working-data directory was copied into the release without removing the tools and unused files. It includes an especially revealing leftover: `3DDATA/RGB` is a DOS directory listing of `E:\HIND\3DDATA`, with entries dated March 1996. The palette source images and conversion batch files elsewhere on the disc fit the same pattern.
+
+The [animation exhibit](../poses/) plays 104 sequences accepted by the shipped editor, so we can browse both Hind’s familiar soldier movements and the larger collection left in the working directory.
 
 ## Getting the helicopter to behave
 
