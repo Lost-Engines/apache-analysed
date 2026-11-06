@@ -1,0 +1,18 @@
+
+ <h1>Inside the cockpit</h1>
+ <p>The pilot and gunner have separate front, side and quarter views. These panels are assembled from 76 raw image pieces. Apache draws the instruments and outside world into the openings. Choose “All five angles” to see each seat's cockpit tiled from left to right.</p>
+ <div class="toolbar">
+  <label>Resolution <select id="resolution"><option>320</option><option selected>640</option></select></label>
+  <label>Seat <select id="seat"><option value="0">Pilot</option><option value="1">Gunner</option></select></label>
+  <label>View <select id="view"><option value="composite" selected>All five angles</option><option value="0">Ahead</option><option value="1">Left 45°</option><option value="2">Left 90°</option><option value="3">Right 45°</option><option value="4">Right 90°</option></select></label>
+  <label>Size <select id="zoom"><option value="fit">Fit</option><option value="1">1× native pixels</option><option value="2">2×</option><option value="3">3×</option></select></label>
+ </div>
+ <p id="meta" class="muted"></p>
+ <div class="preview panel" id="preview">
+  <img id="image" alt="Original cockpit panel layout">
+  <div id="composite" class="cockpit-strip" aria-label="Cockpit views from left to right" hidden></div>
+ </div>
+ <details><summary>How the cockpit is assembled</summary><h2 id="parts-title">Image pieces for this view</h2>
+ <div class="parts" id="parts"></div></details>
+ <details><summary>All 76 pieces, including MFD close-ups</summary><div class="parts" id="all"></div></details>
+ <p id="error" role="alert"></p>

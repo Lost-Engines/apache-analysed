@@ -1,0 +1,13 @@
+
+.preview{overflow:auto;min-height:350px;background:repeating-conic-gradient(#142028 0 25%,#1c2b33 0 50%) 0/32px 32px;text-align:center}
+.preview.composite-preview{min-height:0}
+.preview img{max-width:none;image-rendering:pixelated}
+.preview>img:not([hidden]){display:block;margin-inline:auto}
+.cockpit-strip{margin-inline:auto}
+.cockpit-strip:not([hidden]){display:flex}
+.cockpit-strip figure{margin:0;flex:1;min-width:0}
+.cockpit-strip figcaption{padding:.35rem 0;background:var(--panel);color:var(--muted);font-size:.8rem;white-space:nowrap}
+.cockpit-strip img{display:block;width:100%;height:auto}
+.parts{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem}
+.parts img{image-rendering:pixelated;max-height:180px;object-fit:contain}
+.parts small{display:block}

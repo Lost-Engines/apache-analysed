@@ -1,0 +1,26 @@
+
+ <h1>Model browser</h1>
+ <p>Explore aircraft, vehicles, buildings and their components. Levels of detail are grouped together; choose a model to inspect each version. </p>
+ <div class="toolbar browser-filters">
+  <label>Find <input id="search" type="search" placeholder="Name or record number"></label>
+  <label>Category <select id="category"><option value="all">All categories</option></select></label>
+  <label>Browse <select id="grouping"><option value="families">Model families</option><option value="records">Individual records</option></select></label>
+  <label>Show <select id="filter"><option value="all">All uses</option><option value="missions">In loaded missions</option><option value="scenery">Placed scenery</option><option value="assembled">With attached parts</option><option value="controls">With drawing states</option></select></label>
+ </div>
+ <div class="viewer-grid model-browser">
+  <section>
+   <div class="viewer-wrap"><canvas id="view" aria-label="Interactive three-dimensional model"></canvas></div>
+   <div class="toolbar"><button id="reset">Reset view</button><label><input id="parts" type="checkbox" checked>Attached parts</label><label><input id="cull" type="checkbox" checked>Face visibility</label><label><input id="wire" type="checkbox">Edges</label><label>Point size <input id="point-size" type="range" min="1" max="8" value="3" step=".5"></label></div>
+   <div class="toolbar"><label>Level of detail <select id="detail" aria-label="Level of detail"></select></label><span id="family-info" class="muted"></span></div>
+   <details><summary>Drawing states</summary><div id="controls" class="toolbar"></div></details>
+   <p class="muted">Drag to rotate, scroll to zoom. Double-click to reset. Thumbnails keep a fixed viewing angle.</p>
+   <div id="details" class="details panel"></div>
+   <div id="usage" class="panel"></div>
+  </section>
+  <aside>
+   <p id="count" class="muted" aria-live="polite"></p>
+   <div id="list" class="catalogue model-cards" aria-label="Models"></div>
+   <div class="toolbar pagination"><button id="previous-page">Previous</button><span id="page-info" aria-live="polite"></span><button id="next-page">Next</button></div>
+  </aside>
+ </div>
+ <p id="error" class="error" role="alert"></p>

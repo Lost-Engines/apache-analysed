@@ -1,0 +1,24 @@
+
+.model-browser #view{height:auto;min-height:0;max-height:70vh;aspect-ratio:16/10}
+.model-browser{grid-template-columns:minmax(0,1fr) 420px;align-items:start}
+.model-browser>section,.model-browser>aside{min-width:0}
+.model-browser select{max-width:100%}
+.browser-filters input[type=search]{width:17rem;max-width:100%}
+.model-browser aside>p{margin-top:0}
+.model-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.65rem;padding:.15rem;align-content:start;min-height:200px}
+.model-cards button{background:var(--panel);border:1px solid var(--line);border-radius:.35rem;padding:0;overflow:hidden;text-align:left;min-width:0}
+.model-cards button:hover,.model-cards button:focus-visible{border-color:var(--accent)}
+.model-cards button.selected{border-color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent);background:#2a4147}
+.model-thumbnail{display:flex;aspect-ratio:4/3;background:#0e171d;align-items:center;justify-content:center;color:var(--muted);font-size:.85rem;text-align:center}
+.model-thumbnail img{display:block;width:100%;height:100%;object-fit:contain}
+.model-card-text{display:block;padding:.6rem .7rem}
+.model-card-text strong{display:block;overflow-wrap:anywhere}
+.model-card-text small{display:block;line-height:1.4;margin-top:.25rem}
+.model-badges{display:flex;flex-wrap:wrap;gap:.3rem;margin-top:.4rem;font-size:.75rem;color:var(--accent)}
+.model-badges span{background:#111a20;border-radius:.2rem;padding:.1rem .35rem}
+.pagination{justify-content:space-between;font-size:.9rem}
+.pagination button:disabled{opacity:.4;cursor:default}
+#detail{max-width:100%}#details{margin-bottom:1rem}#details h2{margin-top:0}
+.family-links{display:flex;flex-wrap:wrap;gap:.6rem}
+@media(max-width:1100px){.model-browser{grid-template-columns:minmax(0,1fr) 330px}.browser-filters{font-size:.9rem}}
+@media(max-width:850px){.model-browser{grid-template-columns:minmax(0,1fr)}.model-browser .toolbar label{max-width:100%;flex-wrap:wrap}.model-cards{max-height:70vh;grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}.browser-filters label{flex-wrap:wrap}.browser-filters input[type=search]{width:100%}.model-browser aside{margin-top:1rem}}
