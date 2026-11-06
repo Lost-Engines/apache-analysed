@@ -71,13 +71,17 @@ Comparing discs helped date the F-16's arrival. The 1996 releases carry an earli
 
 ## Rebuilding the little man in MANEDIT
 
-The disc also contains a pose editor which announces itself as “SCAWEN ROBERTS - MANEDIT 1.05”, alongside text files for walking, kneeling, signalling and other movements. Open a pose file and the animation is right there as rows of numbers, with a duration at the top.
+The little man in this exhibit does not appear in Apache’s missions. He is the preview figure from MANEDIT, a development tool left on the CD with 110 text files for walking, kneeling, signalling and other movements. Apache does not use these animation sequences.
+
+The archive also contains unused human models, including [TestMan](../models/#640) and [USInftry](../models/#984). These have no active actor definitions or placements in the four terrain maps or 110 missions. The editor and its files give us a look at the studio’s animation tools alongside the game we came to investigate.
+
+MANEDIT announces itself as “SCAWEN ROBERTS - MANEDIT 1.05”. Open one of its pose files and the animation is right there as rows of numbers, with a duration at the top.
 
 Finding the figure took another step. There isn't a separate model file for it. The editor constructs its nineteen parts directly from constants in the executable: torso, head, arms, legs, feet, toes and a held weapon. We ran that constructor, recovered the geometry, and followed the interpolation and joint rotations used to animate it.
 
-<figure><a href="../poses/"><img src="../images/poses.png" width="1200" height="750" alt="The reconstructed nineteen-part MANEDIT figure in a walking pose"></a><figcaption>The figure from the supplied animation editor. Choose a motion and scrub through it in the browser.</figcaption></figure>
+<figure><a href="../poses/"><img src="../images/poses.png" width="1200" height="750" alt="The reconstructed nineteen-part MANEDIT figure in a walking pose"></a><figcaption>MANEDIT’s preview figure, recovered from the editor executable. Choose a motion and scrub through it in the browser.</figcaption></figure>
 
-The [animation exhibit](../poses/) plays 104 sequences accepted by that editor. It's a very direct look at an old authoring tool: plain text, a small articulated figure, and enough controls to make it move. Elsewhere in the same directory, a file called `RGB` turns out to be a directory listing of `E:\HIND\3DDATA`, dated February 1996. Apache's discs carry traces of the neighbouring projects as well as the game itself.
+The [animation exhibit](../poses/) plays 104 sequences accepted by that editor. The identical MANEDIT executable also ships with the Hind demo. Elsewhere in Apache’s `3DDATA` directory, a file called `RGB` turns out to be a directory listing of `E:\HIND\3DDATA`, dated February 1996. These are traces of Digital Integration’s shared development work, preserved on the release discs.
 
 ## Getting the helicopter to behave
 

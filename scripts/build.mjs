@@ -12,7 +12,7 @@ const pages=[
  {id:'models',title:'Model gallery',description:'Explore Apache’s aircraft, vehicles, ships and scenery, with linked detail levels and attached parts.',source:'viewers/models',kind:'exhibit',script:'viewer.js',css:'browser.css'},
  {id:'terrain',title:'Mission atlas',description:'Explore Fort Hood, Cyprus, Korea and Yemen, with original briefings, routes, formations and 3D scenery.',source:'viewers/terrain',kind:'exhibit',script:'viewer.js',css:'viewer.css'},
  {id:'cockpits',title:'Inside the cockpit',description:'Original pilot and gunner artwork, with all five viewing angles assembled into cockpit panoramas.',source:'viewers/cockpits',kind:'exhibit',script:'viewer.js',css:'viewer.css'},
- {id:'poses',title:'The animation editor',description:'Play walking, kneeling and signalling sequences on the nineteen-part figure recovered from Apache’s MANEDIT editor.',source:'poses',kind:'exhibit',script:'viewer.js'},
+ {id:'poses',title:'The animation editor',description:'Explore the animation preview figure in MANEDIT, a development tool left on the Apache disc.',source:'poses',kind:'exhibit',script:'viewer.js'},
  {id:'artwork',title:'Working artwork',description:'The F-16 cockpit and Abu Dabi doodle hidden in Apache’s palette source artwork, compared with the earlier map image.',source:'artwork',kind:'artwork'},
  {id:'about',title:'About the project',description:'Apache Longbow reverse engineering and reconstruction, part of Lost Engines.',source:'about',kind:'about'}
 ];
